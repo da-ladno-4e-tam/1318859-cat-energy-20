@@ -7,10 +7,9 @@
 <body>
 <header class="page-header">
   <a href="" class="page-header__logo logo">
-    <img class="logo__image" src="http://dummyimage.com/34x38/f06351.png&text=Logo" width="34" height="38" alt="Кэт энерджи">
-    <img class="logo__title" src="http://dummyimage.com/101x18/eeeeee.png&text=CAT+ENERGY" width="101" height="18" alt="Кэт энерджи">
+    <img class="logo__image" src="http://dummyimage.com/34x38/f06351.png&text=Logo" width="190" height="38" alt="Кэт энерджи">
   </a>
-  <button class="page-header__toggle" type="button">
+  <button class="page-header__toggle toggle" type="button">
     <span class="visually-hidden">Открыть меню</span>
   </button>
   <nav class="nav">
@@ -23,34 +22,49 @@
 </header>
 
 <main class="page-main">
-  <h1 class="page-main__title">Подбор программы</h1>
+  <h1 class="page-main__title title">Подбор программы</h1>
   <p class="page-main__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-
 
   <form class="order-form" action="https://echo.htmlacademy.ru" method="post">
     <h2 class="visually-hidden">Анкета для подбора программы питания</h2>
     <fieldset class="order-form__main-info main-info">
-      <label class="main-info__label" for="name">Имя:*</label>
-      <input class="main-info__input order-form__input--required" id="name" name="name" type="text" placeholder="Барсик">
-      <label class="main-info__label" for="weight">Вес (кг):*</label>
-      <input class="main-info__input order-form__input--required" id="weight" name="weight" type="number" value="7">
-      <label class="main-info__label" for="age">Возраст (лет):</label>
-      <input class="main-info__input" id="age" name="age" type="number" value="7">
+      <label class="main-info__label">
+        Имя:*
+        <input class="main-info__input input input--required" name="name" type="text" placeholder="Барсик">
+      </label>
+      <label class="main-info__label">
+        Вес (кг):*
+        <input class="main-info__input input input--required" name="weight" type="number" value="7">
+      </label>
+      <label class="main-info__label">
+        Возраст (лет):
+        <input class="main-info__input" name="age" type="number" value="7">
+      </label>
     </fieldset>
     <fieldset class="order-form__programm programm">
-      <input class="programm__input" id="slim" name="programm" type="radio" value="slim" checked>
-      <label class="programm__label" for="slim">Похудение</label>
-      <input class="programm__input" id="weight-gain" name="programm" type="radio" value="weight-gain">
-      <label class="programm__label" for="weight-gain">Набор массы</label>
-      <input class="programm__input" id="need-advice" name="programm" type="radio" value="need-advice">
-      <label class="programm__label" for="need-advice">Не знаю (нужен ваш совет)</label>
+      <label class="programm__label">
+        <input class="programm__input" name="programm" type="radio" value="slim" checked>
+        Похудение
+      </label>
+      <label class="programm__label">
+        <input class="programm__input" name="programm" type="radio" value="weight-gain">
+        Набор массы
+      </label>
+      <label class="programm__label">
+        <input class="programm__input" name="programm" type="radio" value="need-advice">
+        Не знаю (нужен ваш совет)
+      </label>
     </fieldset>
     <fieldset class="order-form__contacts contacts">
       <legend class="contacts__title">Контактные данные (владельца кота)</legend>
-      <label class="contacts__label" for="email">E-mail:*</label>
-      <input class="contacts__input contacts__input--email order-form__input--required" id="email" name="email" type="email" value="kuklachev@gmail.com">
-      <label class="contacts__label" for="phone">Телефон:*</label>
-      <input class="contacts__input contacts__input--phone order-form__input--required" id="phone" name="phone" type="tel" value="8(960)900-60-90">
+      <label class="contacts__label">
+        E-mail:*
+        <input class="contacts__input contacts__input--email input input--required" name="email" type="email" value="kuklachev@gmail.com">
+      </label>
+      <label class="contacts__label">
+        Телефон:*
+        <input class="contacts__input contacts__input--phone input input--required" name="phone" type="tel" value="8(960)900-60-90">
+      </label>
     </fieldset>
     <fieldset class="order-form__comment comment">
       <legend class="comment__title">Комментарий</legend>
@@ -58,14 +72,22 @@
     </fieldset>
     <fieldset class="order-form__extra extra">
       <legend class="extra__title">Дополнительно</legend>
-      <input class="extra__input" id="sweetener" name="sweetener" type="checkbox" checked>
-      <label class="extra__label" for="sweetener">Сахарозаменитель</label>
-      <input class="extra__input" id="water" name="water" type="checkbox">
-      <label class="extra__label" for="water">Питьевая вода</label>
-      <input class="extra__input" id="milk" name="milk" type="checkbox">
-      <label class="extra__label" for="milk">Молоко</label>
-      <input class="extra__input" id="vitamins" name="vitamins" type="checkbox">
-      <label class="extra__label" for="vitamins">Витамины</label>
+      <label class="extra__label">
+        <input class="extra__input" name="sweetener" type="checkbox" checked>
+        Сахарозаменитель
+      </label>
+      <label class="extra__label">
+        <input class="extra__input" name="water" type="checkbox">
+        Питьевая вода
+      </label>
+      <label class="extra__label">
+        <input class="extra__input" name="milk" type="checkbox">
+        Молоко
+      </label>
+      <label class="extra__label">
+        <input class="extra__input" name="vitamins" type="checkbox">
+        Витамины
+      </label>
     </fieldset>
     <button class="order-form__button button button--primary">Отправить заявку</button>
     <span class="order-form__note">* — Обязательные поля</span>
@@ -79,16 +101,16 @@
     </div>
 
     <div class="contacts__map map">
-      <img class="map__image" src="http://dummyimage.com/320x362/7dc1ff.png&text=Map" width="320" height="362" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+      <iframe class="map__image" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4234.828814742169!2d30.320110179856925!3d59.93922640595866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1595161310637!5m2!1sen!2sru" width="320" height="362" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </div>
   </section>
 </main>
 
-<footer class="main-footer">
-  <a href="" class="main-footer__logo logo--clipped">
-    <img class="logo__title" src="http://dummyimage.com/101x18/eeeeee.png&text=CAT+ENERGY" width="101" height="18" alt="Кэт энерджи">
+<footer class="page-footer">
+  <a href="" class="page-footer__logo logo">
+    <img class="logo__title" src="http://dummyimage.com/101x18/f06351.png&text=CAT+ENERGY" width="101" height="18" alt="Кэт энерджи">
   </a>
-  <ul class="main-footer__social social">
+  <ul class="page-footer__social social">
     <li class="social__item">
       <a class="social__link social__link--vk" href="#">
         <span class="visually-hidden">Вконтакте</span>
