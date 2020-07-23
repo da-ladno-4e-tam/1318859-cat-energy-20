@@ -1,0 +1,40 @@
+.extra-fieldset {
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+
+.extra-fieldset__title {
+  position: relative;
+  max-width: 200px;
+  margin-bottom: 34px;
+  padding-right: 24px;
+  font-size: 24px;
+  line-height: 108%;
+  background-color: $basic_white;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: calc(100vw - 40px);
+    height: 2px;
+    top: 16px;
+    left: 0;
+    background-color: $basic_green;
+    z-index: -1;
+  }
+}
+
+.extra-fieldset__label {
+  line-height: 112%;
+  text-transform: uppercase;
+
+  &:not(:last-child) {
+    margin-bottom: 13px;
+  }
+}
+
+.extra-fieldset__input {
+  margin: 0;
+  margin-right: 18px;
+}

@@ -1,0 +1,30 @@
+.slider__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.slider__text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 125%;
+  text-transform: uppercase;
+
+  &--before {
+    order: 2;
+  }
+
+  &--after {
+    order: 4;
+  }
+}
+
+.slider__image {
+  width: 100%;
+  height: auto;
+}
+
+.slider__toggle {
+  order: 3;
+  width: 110px;
+}

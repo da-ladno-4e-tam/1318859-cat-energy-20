@@ -1,0 +1,41 @@
+.button {
+  display: flex;
+  min-height: 40px;
+  justify-content: center;
+  padding: 11px;
+  font-family: $font-family-primary;
+  font-size: 14px;
+  line-height: 129%;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+
+  &--primary {
+    color: $button--primary-text-color;
+    background-color: $button--primary-background-color;
+
+    &:hover {
+      background-color: $button--primary-background-color-hover;
+    }
+
+    &:active {
+      color: rgba($button--primary-text-color, 0.3);
+      background-color: $button--primary-background-color-active;
+    }
+  }
+
+  &--secondary {
+    color: $button--secondary-text-color;
+    background-color: $button--secondary-background-color;
+
+    &:hover {
+      background-color: $button--secondary-background-color-hover;
+    }
+
+    &:active {
+      color: rgba($button--secondary-text-color, 0.3);
+      background-color: $button--secondary-background-color-active;
+    }
+  }
+}

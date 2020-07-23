@@ -1,0 +1,14 @@
+.indicators__item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2px;
+  font-family: $font-family-secondary;
+  font-size: 12px;
+  line-height: 133%;
+  color: $special_dark-grey;
+}
+
+.indicators__name {
+  margin: 0;
+  order: -1;
+}

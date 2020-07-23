@@ -1,0 +1,54 @@
+.contacts-fieldset {
+  border: none;
+}
+
+.contacts-fieldset__title {
+  position: relative;
+  padding-top: 26px;
+  max-width: 200px;
+  font-size: 24px;
+  line-height: 108%;
+  background-color: $basic_white;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: calc(100vw - 40px);
+    height: 2px;
+    top: 42px;
+    left: 0;
+    background-color: $basic_green;
+    z-index: -1;
+  }
+}
+
+.contacts-fieldset__label {
+  display: flex;
+  align-items: center;
+  line-height: 112%;
+  text-transform: uppercase;
+  color: $special_dark-grey;
+
+  &:not(:last-child) {
+    margin-bottom: 14px;
+  }
+}
+
+.contacts-fieldset__name {
+  padding-right: 13px;
+  min-width: max-content;
+}
+
+.contacts-fieldset__input {
+  position: relative;
+  flex-grow: 1;
+  height: 45px;
+  padding-left: 15px;
+  padding-right: 35px;
+  font-family: $font-family-primary;
+  font-size: 16px;
+  line-height: 112%;
+  text-transform: uppercase;
+  color: $special_dark-grey;
+  border: $input-border;
+}

@@ -1,0 +1,19 @@
+.programm-fieldset {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  border-top: 1px solid $border-color-primary;
+  border-bottom: 1px solid $border-color-primary;
+  line-height: 112%;
+  text-transform: uppercase;
+  color: $special_dark-grey-2;
+
+  &:not(:last-child) {
+    margin-bottom: 13px;
+  }
+}
+
+.programm-fieldset__input {
+  margin: 0;
+  margin-right: 18px;
+}

@@ -1,0 +1,26 @@
+.logo {
+  display: block;
+
+  &--unlink {
+    pointer-events: none;
+    cursor: default;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &--unlink:hover,
+  &--unlink:active {
+    opacity: 1;
+  }
+}
+
+.logo__title {
+  display: block;
+  margin: 0 auto;
+}

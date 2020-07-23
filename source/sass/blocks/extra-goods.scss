@@ -1,0 +1,35 @@
+.extra-goods {
+  padding: 28px 0 50px;
+}
+
+.extra-goods__title {
+  position: relative;
+  width: max-content;
+  max-width: 270px;
+  margin: 0;
+  padding-right: 22px;
+  padding-bottom: 35px;
+  padding-left: 20px;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 100%;
+  background-color: $basic_white;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 2px;
+    top: calc(50% - 14px);
+    background-color: $basic_green;
+    z-index: -1;
+  }
+}
+
+.extra-goods__list {
+  padding: 0 20px;
+}
+
+.extra-goods__offer {
+  padding: 39px 20px 0;
+}

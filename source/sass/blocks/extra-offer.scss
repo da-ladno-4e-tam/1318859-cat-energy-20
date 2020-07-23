@@ -1,0 +1,33 @@
+.extra-offer {
+  padding: 0 20px;
+}
+
+.extra-offer__wrapper {
+  position: relative;
+  padding: 171px 58px 43px;
+  background-color: $basic_green;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 56px;
+    height: 60px;
+    top: 50px;
+    left: calc(50% - 28px);
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.extra-offer__text {
+  margin: 0;
+  font-family: $font-family-secondary;
+  line-height: 125%;
+  color: $basic_white;
+  text-align: center;
+}

@@ -1,0 +1,76 @@
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/oswaldregular.woff2") format("woff2");
+  src: url("../fonts/oswaldregular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/oswaldmedium.woff2") format("woff2");
+  src: url("../fonts/oswaldmedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@import "config";
+@import "blocks/logo.scss";
+@import "blocks/toggle.scss";
+@import "blocks/title.scss";
+@import "blocks/button.scss";
+@import "blocks/nav.scss";
+@import "blocks/header.scss";
+@import "blocks/promo.scss";
+@import "blocks/offer.scss";
+@import "blocks/offers.scss";
+@import "blocks/description.scss";
+@import "blocks/slider.scss";
+@import "blocks/demo.scss";
+@import "blocks/map.scss";
+@import "blocks/contacts.scss";
+@import "blocks/indicators.scss";
+@import "blocks/product.scss";
+@import "blocks/goods.scss";
+@import "blocks/extra-product.scss";
+@import "blocks/extra-goods.scss";
+@import "blocks/extra-offer.scss";
+@import "blocks/main-fieldset.scss";
+@import "blocks/programm-fieldset.scss";
+@import "blocks/contacts-fieldset.scss";
+@import "blocks/comment-fieldset.scss";
+@import "blocks/extra-fieldset.scss";
+@import "blocks/order-form.scss";
+@import "blocks/main.scss";
+@import "blocks/social.scss";
+@import "blocks/copyright.scss";
+@import "blocks/footer.scss";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: $font-family-primary;
+  font-weight: normal;
+  font-size: 16px;
+  color: $basic_black;
+}
