@@ -1,0 +1,39 @@
+.slider__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.slider__text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 125%;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 150%;
+  }
+
+  &--before {
+    order: 2;
+  }
+
+  &--after {
+    order: 4;
+  }
+}
+
+.slider__image {
+  width: 100%;
+  height: auto;
+
+  &--after {
+    display: none;
+  }
+}
+
+.slider__toggle {
+  order: 3;
+  width: 110px;
+}

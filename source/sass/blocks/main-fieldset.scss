@@ -1,0 +1,30 @@
+.main-fieldset {
+  border: none;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 80px;
+  }
+}
+
+.main-fieldset__cat-info {
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 72px;
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 0;
+    }
+  }
+}
+
+.main-fieldset__programm {
+  padding-top: 20px;
+  padding-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    padding: 30px 28px 25px;
+  }
+}

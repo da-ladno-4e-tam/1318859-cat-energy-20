@@ -1,0 +1,50 @@
+/*colors*/
+$basic_white:               #ffffff;
+$basic_black:               #000000;
+$basic_green:               #68b738;
+$basic_green-2:             #5eaa2f;
+$background_grey:           #eaeaea;
+$basic_grey:                #f2f2f2;
+$basic_grey-2:              #ebebeb;
+$basic_dark-grey:           #111111;
+$special_grey:              #cdcdcd;
+$special_grey-2:            #666666;
+$special_dark-grey:         #444444;
+$special_dark-grey-2:       #222222;
+$contacts-header-color:     #111111;
+$status_error:              #ff8282;
+$border-color-primary:      #d9d9d9;
+$border-color-secondary:    #e6e6e6;
+$input-border-color:        #e7e7e7;
+
+/*shadows*/
+$shadow-background:         #c4c4c4;
+$shadow_normal-box-shadow:  0 1px 3px rgba(0, 0, 0, 0.16);
+$shadow_hover-box-shadow:   0 2px 4px rgba(0, 0, 0, 0.19);
+$shadow_pressed-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+
+/*fonts*/
+$font-family-primary:   "Oswald", "Arial", sans-serif;
+$font-family-secondary: "Arial", sans-serif;
+$font-weight-normal: normal;
+
+/*buttons*/
+$button--primary-background-color:          $basic_green;
+$button--primary-background-color-hover:    $basic_green-2;
+$button--primary-background-color-active:   $basic_green-2;
+$button--secondary-background-color:        $basic_grey;
+$button--secondary-background-color-hover:  $basic_grey-2;
+$button--secondary-background-color-active: $basic_grey-2;
+$button--primary-text-color:                $basic_white;
+$button--secondary-text-color:              $special_dark-grey;
+
+/*borders*/
+$border-common:       1px solid $special_grey;
+$input-border:        1px solid $input-border-color;
+$input-border-hover:  $border-common;
+$input-border-active: 2px solid $special_dark-grey;
+$input-border-error:  2px solid $status_error;
+
+/*screens*/
+$tablet-width: 768px;
+$desktop-width: 1440px;

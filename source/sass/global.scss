@@ -1,0 +1,16 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1440px;
+
+  font-family: $font-family-primary;
+  font-weight: normal;
+  font-size: 16px;
+  color: $basic_black;
+}

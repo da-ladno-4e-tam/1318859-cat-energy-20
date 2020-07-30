@@ -1,0 +1,31 @@
+.programm {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  border-top: 1px solid $border-color-primary;
+  border-bottom: 1px solid $border-color-primary;
+  line-height: 112%;
+  text-transform: uppercase;
+  color: $special_dark-grey-2;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 150%;
+    border: $input-border;
+  }
+}
+
+.programm__label {
+  &:not(:last-child) {
+    margin-bottom: 13px;
+  }
+}
+
+.programm__input {
+  margin: 0;
+  margin-right: 18px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 20px;
+  }
+}

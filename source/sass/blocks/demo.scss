@@ -1,0 +1,219 @@
+.demo {
+  padding: 27px 0 25px;
+  background-color: $background_grey;
+
+  @media (min-width: $tablet-width) {
+    padding: 43px 0 0;
+    background-color: $basic_white;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 0 110px 64px;
+    background: linear-gradient($basic_white 0%, $basic_white 191px, $basic_grey 191px, $basic_grey 100%);
+  }
+}
+
+.demo__description {
+  padding: 0 20px 44px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 58px 90px 0 75px;
+  }
+}
+
+.demo__title {
+  margin-bottom: 33px;
+  line-height: 111%;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 63px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 146px;
+  }
+}
+
+.demo__text {
+  margin: 0;
+  margin-bottom: 25px;
+  font-family: $font-family-secondary;
+  font-size: 14px;
+  color: $special_dark-grey;
+  line-height: 129%;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 69px;
+  }
+}
+
+.demo__stats {
+  margin: 0;
+  display: grid;
+  grid-template-areas: "weight time" "money money";
+  grid-template-columns: 1fr 1fr;
+
+  @media (min-width: $tablet-width) {
+    grid-template-areas: "weight time money";
+    grid-template-columns: min-content min-content 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-areas: "weight time" "money money";
+    grid-template-columns: min-content min-content;
+  }
+}
+
+.demo__stat-item {
+  display: flex;
+  justify-content: center;
+
+  &--block {
+    position: relative;
+    width: 124px;
+    margin-right: auto;
+    margin-bottom: 34px;
+    margin-left: auto;
+    border: $border-common;
+    border-radius: 3px;
+
+    @media (min-width: $tablet-width) {
+      width: 162px;
+      margin-bottom: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 60px;
+    }
+  }
+
+  &--line {
+    @media (min-width: $tablet-width) {
+      flex-direction: column;
+      align-items: end;
+    }
+
+    @media (min-width: $desktop-width) {
+      flex-direction: row;
+      align-items: start;
+      justify-content: start;
+    }
+  }
+
+  &--weight {
+    grid-area: weight;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 42px;
+    }
+  }
+
+  &--time {
+    grid-area: time;
+  }
+
+  &--money {
+    grid-area: money;
+  }
+}
+
+.demo__stat-name {
+  margin: 0;
+
+  &--block {
+    position: absolute;
+    top: 45px;
+    order: 1;
+    width: min-content;
+    padding: 0 9px;
+    font-family: $font-family-secondary;
+    font-size: 12px;
+    line-height: 100%;
+    color: $special_dark-grey;
+    text-align: center;
+    background-color: $background_grey;
+
+    @media (min-width: $tablet-width) {
+      top: 63px;
+      width: max-content;
+      font-size: 14px;
+      background-color: $basic_white;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-color: $basic_grey;
+    }
+  }
+
+  &--line {
+    order: -1;
+    font-size: 14px;
+    line-height: 143%;
+    text-transform: uppercase;
+    white-space: pre;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 100%;
+      white-space: normal;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 63px;
+    }
+  }
+}
+
+.demo__stat-value {
+  text-transform: uppercase;
+
+  &--block {
+    padding: 15px 0 18px;
+    font-size: 24px;
+    line-height: 100%;
+    text-align: center;
+
+    @media (min-width: $tablet-width) {
+      padding: 15px 0 20px;
+      font-size: 30px;
+      line-height: 123%;
+    }
+  }
+
+  &--line {
+    font-size: 14px;
+    line-height: 143%;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 100%;
+    }
+  }
+}
+
+.demo__slider {
+  background-color: $background_grey;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 64px;
+    background: linear-gradient($basic_white 0%, $basic_white 191px, $background_grey 191px, $background_grey 100%);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+    background: none;
+  }
+}
