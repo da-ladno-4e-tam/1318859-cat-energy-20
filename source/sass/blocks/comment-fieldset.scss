@@ -11,15 +11,41 @@
   line-height: 108%;
   background-color: $basic_white;
 
+  @media (min-width: $tablet-width) {
+    max-width: 100%;
+    margin-bottom: 76px;
+    padding-right: 40px;
+    padding-left: 40px;
+    font-size: 36px;
+    line-height: 100%;
+  }
+
   &::after {
     content: "";
     position: absolute;
-    width: calc(100vw - 40px);
+    width: calc(100vw - 46px);
     height: 2px;
     top: 16px;
     left: 0;
     background-color: $basic_green;
     z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      width: calc(100vw - 30px);
+      top: 23px;
+      left: -30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: calc(100vw - 16px);
+      left: calc((1440px - 100vw) / 2 - 70px);
+    }
+  }
+}
+
+.comment-fieldset__wrapper {
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
   }
 }
 
@@ -34,4 +60,10 @@
   color: $special_dark-grey;
   border: $input-border;
   resize: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 19px;
+    font-size: 20px;
+    line-height: 150%;
+  }
 }

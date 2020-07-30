@@ -1,4 +1,4 @@
-.programm-fieldset {
+.programm {
   display: flex;
   flex-direction: column;
   border: none;
@@ -8,12 +8,24 @@
   text-transform: uppercase;
   color: $special_dark-grey-2;
 
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 150%;
+    border: $input-border;
+  }
+}
+
+.programm__label {
   &:not(:last-child) {
     margin-bottom: 13px;
   }
 }
 
-.programm-fieldset__input {
+.programm__input {
   margin: 0;
   margin-right: 18px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 20px;
+  }
 }

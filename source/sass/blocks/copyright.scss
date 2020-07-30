@@ -14,6 +14,12 @@
 .copyright__text {
   margin: 0;
   line-height: 112.5%;
+
+  @media (min-width: $tablet-width) {
+    width: max-content;
+    max-width: 200px;
+    padding-right: 22px;
+  }
 }
 
 .copyright__logo {

@@ -1,40 +1,113 @@
 .order-form {
-  padding-bottom: 27px;
+  padding-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 82px;
+  }
 }
 
 .order-form__main-info {
-  padding: 0 20px 24px;
-}
+  padding: 0 20px;
+  margin-bottom: 26px;
 
-.order-form__programm {
-  padding: 20px 20px 22px;
+  @media (min-width: $tablet-width) {
+    padding: 0 70px;
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+  }
 }
 
 .order-form__contacts {
-  padding: 32px 20px 27px;
+  padding: 0 20px;
+  margin-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px 0;
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 70px;
+    margin-bottom: 70px;
+  }
 }
 
 .order-form__comment {
-  padding: 0 20px 27px;
+  padding: 0 20px;
+  margin-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px 0;
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 70px;
+    margin-bottom: 67px;
+  }
 }
 
 .order-form__extra {
-  padding: 0 20px 34px;
+  padding: 0 20px;
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 70px;
+    margin-bottom: 61px;
+  }
 }
 
-.order-form__button-wrap {
-  padding: 0 20px 21px;
+.order-form__button-wrapper {
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 60px;
+    align-items: center;
+    padding: 0 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column-gap: 80px;
+    padding: 0 110px;
+  }
 }
 
 .order-form__button {
   width: 100%;
+  margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    min-height: 52px;
+    font-size: 20px;
+    line-height: 0;
+  }
 }
 
 .order-form__note {
-  margin: 0 auto;
-  padding: 0 20px;
+  margin: 0;
   font-family: $font-family-secondary;
   font-size: 14px;
   line-height: 114%;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 100%;
+    text-align: left;
+  }
 }

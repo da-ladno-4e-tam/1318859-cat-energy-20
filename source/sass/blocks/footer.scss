@@ -1,20 +1,45 @@
 .page-footer {
   padding: 0 20px;
   background-color: $basic_grey;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 55px 30px 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 57px 110px 58px;
+  }
 }
 
 .page-footer__logo {
   margin: 0 auto;
   padding: 39px 0 32px;
   border-bottom: 1px solid $border-color-primary;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    border-bottom: none;
+  }
 }
 
 .page-footer__social {
   margin: 0 auto;
   padding: 20px 0;
   border-bottom: 1px solid $border-color-primary;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+    padding: 0;
+  }
 }
 
 .page-footer__copyright {
   padding: 22px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }

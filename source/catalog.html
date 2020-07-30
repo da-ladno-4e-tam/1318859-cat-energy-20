@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи. Каталог</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -10,7 +11,7 @@
   <a href="index.html" class="page-header__logo logo">
     <img class="logo__image" src="img/logo-mobile.svg" width="190" height="37" alt="Кэт энерджи">
   </a>
-  <nav class="nav">
+  <nav class="page-header__nav nav">
     <button class="nav__toggle toggle toggle--close" type="button">
       <span class="visually-hidden">Открыть меню</span>
     </button>
@@ -41,7 +42,7 @@
     <ul class="goods__list">
       <li class="goods__item product">
         <div class="product__description">
-          <h3 class="product__title">Cat energy pro 500 г</h3>
+          <h3 class="product__title">Cat energy pro 500&nbsp;г</h3>
           <dl class="product__indicators indicators">
             <div class="indicators__item">
               <dt class="indicators__value">
@@ -74,7 +75,7 @@
       </li>
       <li class="goods__item product">
         <div class="product__description">
-          <h3 class="product__title">Cat energy pro 1000 г</h3>
+          <h3 class="product__title">Cat energy pro 1000&nbsp;г</h3>
           <dl class="product__indicators indicators">
             <div class="indicators__item">
               <dt class="indicators__value">
@@ -108,7 +109,7 @@
       </li>
       <li class="goods__item product">
         <div class="product__description">
-          <h3 class="product__title">Cat energy pro 500 г</h3>
+          <h3 class="product__title">Cat energy pro 500&nbsp;г</h3>
           <dl class="product__indicators indicators">
             <div class="indicators__item">
               <dt class="indicators__value">
@@ -142,7 +143,7 @@
       </li>
       <li class="goods__item product">
         <div class="product__description">
-          <h3 class="product__title">Cat energy pro 1000 г</h3>
+          <h3 class="product__title">Cat energy pro 1000&nbsp;г</h3>
           <dl class="product__indicators indicators">
             <div class="indicators__item">
               <dt class="indicators__value">
@@ -176,7 +177,7 @@
       </li>
       <li class="goods__item product">
         <div class="product__description">
-          <h3 class="product__title">Cat energy slim 500 г</h3>
+          <h3 class="product__title">Cat energy slim 500&nbsp;г</h3>
           <dl class="product__indicators indicators">
             <div class="indicators__item">
               <dt class="indicators__value">
@@ -210,7 +211,7 @@
       </li>
       <li class="goods__item product">
         <div class="product__description">
-          <h3 class="product__title">Cat energy slim 1000 г</h3>
+          <h3 class="product__title">Cat energy slim 1000&nbsp;г</h3>
           <dl class="product__indicators indicators">
             <div class="indicators__item">
               <dt class="indicators__value">
@@ -244,7 +245,7 @@
       </li>
       <li class="goods__item product">
         <div class="product__description">
-          <h3 class="product__title">Cat energy slim 500 г</h3>
+          <h3 class="product__title">Cat energy slim 500&nbsp;г</h3>
           <dl class="product__indicators indicators">
             <div class="indicators__item">
               <dt class="indicators__value">
@@ -287,43 +288,45 @@
 
   <section class="extra-goods">
     <h2 class="extra-goods__title">Дополнительные товары</h2>
-    <ul class="extra-goods__list extra-product">
-      <li class="extra-product__item">
-        <h3 class="extra-product__title">Сахарозаменитель</h3>
-        <div class="extra-product__unit">
-          <span class="extra-product__quantity">1 упаковка (100 г)</span>
-          <span class="extra-product__price">200 p.</span>
+    <div class="extra-goods__wrapper">
+      <ul class="extra-goods__list extra-product">
+        <li class="extra-product__item">
+          <h3 class="extra-product__title">Сахарозаменитель</h3>
+          <div class="extra-product__unit">
+            <span class="extra-product__quantity">1 упаковка (100 г)</span>
+            <span class="extra-product__price">200 p.</span>
+          </div>
+          <a class="extra-product__link button button--primary" href="#">Заказать</a>
+        </li>
+        <li class="extra-product__item">
+          <h3 class="extra-product__title">Питьевая вода</h3>
+          <div class="extra-product__unit">
+            <span class="extra-product__quantity">5 литров</span>
+            <span class="extra-product__price">50 p.</span>
+          </div>
+          <a class="extra-product__link button button--primary" href="#">Заказать</a>
+        </li>
+        <li class="extra-product__item">
+          <h3 class="extra-product__title">Молоко</h3>
+          <div class="extra-product__unit">
+            <span class="extra-product__quantity">1 литр</span>
+            <span class="extra-product__price">100 p.</span>
+          </div>
+          <a class="extra-product__link button button--primary" href="#">Заказать</a>
+        </li>
+        <li class="extra-product__item">
+          <h3 class="extra-product__title">Витамины</h3>
+          <div class="extra-product__unit">
+            <span class="extra-product__quantity">1 упаковка (30 г)</span>
+            <span class="extra-product__price">300 p.</span>
+          </div>
+          <a class="extra-product__link button button--primary" href="#">Заказать</a>
+        </li>
+      </ul>
+      <div class="extra-goods__offer extra-offer">
+        <div class="extra-offer__wrapper">
+          <p class="extra-offer__text">Закажите все и&nbsp;получите чехол для кота в подарок!</p>
         </div>
-        <a class="extra-product__link button button--primary" href="#">Заказать</a>
-      </li>
-      <li class="extra-product__item">
-        <h3 class="extra-product__title">Питьевая вода</h3>
-        <div class="extra-product__unit">
-          <span class="extra-product__quantity">5 литров</span>
-          <span class="extra-product__price">50 p.</span>
-        </div>
-        <a class="extra-product__link button button--primary" href="#">Заказать</a>
-      </li>
-      <li class="extra-product__item">
-        <h3 class="extra-product__title">Молоко</h3>
-        <div class="extra-product__unit">
-          <span class="extra-product__quantity">1 литр</span>
-          <span class="extra-product__price">100 p.</span>
-        </div>
-        <a class="extra-product__link button button--primary" href="#">Заказать</a>
-      </li>
-      <li class="extra-product__item">
-        <h3 class="extra-product__title">Витамины</h3>
-        <div class="extra-product__unit">
-          <span class="extra-product__quantity">1 упаковка (30 г)</span>
-          <span class="extra-product__price">300 p.</span>
-        </div>
-        <a class="extra-product__link button button--primary" href="#">Заказать</a>
-      </li>
-    </ul>
-    <div class="extra-goods__offer extra-offer">
-      <div class="extra-offer__wrapper">
-        <p class="extra-offer__text">Закажите все и&nbsp;получите чехол для кота в подарок!</p>
       </div>
     </div>
   </section>

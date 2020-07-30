@@ -1,5 +1,23 @@
 .page-main__title {
   padding: 27px 20px 40px;
+
+  @media (min-width: $tablet-width) {
+    padding: 64px 30px 83px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 74px 110px 84px;
+  }
+
+  &--form {
+    @media (min-width: $tablet-width) {
+      padding-bottom: 54px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 56px;
+    }
+  }
 }
 
 .page-main__text {
@@ -9,4 +27,16 @@
   font-size: 14px;
   line-height: 128%;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    max-width: 470px;
+    padding: 0 70px 66px;
+    font-size: 20px;
+    line-height: 150%;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 550px;
+    padding: 0 110px 66px;
+  }
 }
