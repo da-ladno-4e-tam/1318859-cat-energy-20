@@ -16,7 +16,9 @@
   list-style: none;
 
   @media (min-width: $desktop-width) {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 80px;
   }
 }
 
@@ -24,11 +26,11 @@
   padding: 30px 20px 0;
 
   @media (min-width: $tablet-width) {
-    padding: 77px 53px 53px;
+    padding: 77px 53px 56px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 77px 50px 55px 52px;
+    padding: 77px 50px 59px 52px;
   }
 
   &:not(:last-child) {
@@ -39,7 +41,6 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin-right: 80px;
       margin-bottom: 0;
     }
   }

@@ -4,18 +4,61 @@
   border: none;
   border-top: 1px solid $border-color-primary;
   border-bottom: 1px solid $border-color-primary;
-  line-height: 112%;
-  text-transform: uppercase;
   color: $special_dark-grey-2;
 
   @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 150%;
     border: $input-border;
   }
 }
 
+.programm__name {
+  cursor: pointer;
+
+  &:hover::before {
+    border-color: $radio-hover-border-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border: $border-common;
+    border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      top: 11px;
+      left: 11px;
+      width: 18px;
+      height: 18px;
+    }
+  }
+}
+
 .programm__label {
+  position: relative;
+
   &:not(:last-child) {
     margin-bottom: 13px;
   }
@@ -23,9 +66,18 @@
 
 .programm__input {
   margin: 0;
-  margin-right: 18px;
+  margin-right: 16px;
+  opacity: 0;
 
   @media (min-width: $tablet-width) {
     margin-right: 20px;
+  }
+
+  &:checked + .programm__name::after {
+    background-color: $basic_green;
+  }
+
+  &:focus + .programm__name::before {
+    border-color: $special_dark-grey;
   }
 }

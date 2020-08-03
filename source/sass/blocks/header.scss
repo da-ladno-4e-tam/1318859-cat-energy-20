@@ -4,17 +4,17 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    padding-top: 24px;
+    padding-top: 33px;
   }
 
   @media (min-width: $desktop-width) {
     justify-content: flex-start;
-    padding-top: 53px;
+    padding-top: 69px;
   }
 }
 
 .page-header__logo {
-  padding: 0 20px 17px;
+  padding: 0 20px 11px;
   width: 80%;
 
   @media (min-width: $tablet-width) {

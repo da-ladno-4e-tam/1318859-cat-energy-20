@@ -1,5 +1,5 @@
 .order-form {
-  padding-bottom: 32px;
+  padding-bottom: 33px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 72px;
@@ -8,25 +8,40 @@
   @media (min-width: $desktop-width) {
     padding-bottom: 82px;
   }
+
+  input[disabled] + span,
+  input[disabled]:hover + span,
+  input[disabled]:active + span {
+    color: $special_dark-grey-2;
+    opacity: 0.3;
+    cursor: default;
+  }
+
+  input[disabled] + span::before,
+  input[disabled]:hover + span::before,
+  input[disabled]:active + span::before {
+    border: $border-common;
+  }
 }
 
 .order-form__main-info {
-  padding: 0 20px;
-  margin-bottom: 26px;
+  padding: 0;
+  margin-bottom: 27px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 70px;
-    margin-bottom: 70px;
+    padding: 0 65px 0 69px;
+    margin-bottom: 74px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0 110px;
+    margin-bottom: 68px;
   }
 }
 
 .order-form__contacts {
-  padding: 0 20px;
-  margin-bottom: 27px;
+  padding: 0 16px;
+  margin-bottom: 28px;
 
   @media (min-width: $tablet-width) {
     padding: 0 30px 0;
@@ -35,28 +50,28 @@
 
   @media (min-width: $desktop-width) {
     padding: 0 70px;
-    margin-bottom: 70px;
+    margin-bottom: 68px;
   }
 }
 
 .order-form__comment {
-  padding: 0 20px;
-  margin-bottom: 27px;
+  padding: 0 16px;
+  margin-bottom: 24px;
 
   @media (min-width: $tablet-width) {
     padding: 0 30px 0;
-    margin-bottom: 65px;
+    margin-bottom: 60px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0 70px;
-    margin-bottom: 67px;
+    margin-bottom: 62px;
   }
 }
 
 .order-form__extra {
-  padding: 0 20px;
-  margin-bottom: 34px;
+  padding: 0 16px;
+  margin-bottom: 36px;
 
   @media (min-width: $tablet-width) {
     padding: 0 30px;
@@ -89,6 +104,7 @@
 .order-form__button {
   width: 100%;
   margin-bottom: 21px;
+  font-size: 16px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;

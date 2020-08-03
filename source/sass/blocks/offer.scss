@@ -89,8 +89,8 @@
 
 .offer__title {
   margin: 0;
-  margin-bottom: 29px;
-  padding-left: 91px;
+  margin-bottom: 30px;
+  padding-left: 71px;
   font-weight: normal;
   font-size: 24px;
   line-height: 154%;
@@ -111,7 +111,7 @@
 
 .offer__text {
   margin: 0;
-  padding-bottom: 23px;
+  padding-bottom: 22px;
   font-family: $font-family-secondary;
   font-size: 14px;
   color: $special_dark-grey;
@@ -119,24 +119,24 @@
   border-bottom: 1px solid $border-color-primary;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 48px;
+    margin-bottom: 53px;
     padding-bottom: 0;
     font-size: 16px;
     line-height: 150%;
     border-bottom: none;
 
     &--slim {
-      width: calc(100% - 245px);
+      width: calc(100% - 230px);
     }
 
     &--pro {
-      width: calc(100% - 276px);
+      width: calc(100% - 260px);
     }
   }
 
   @media (min-width: $desktop-width) {
     width: auto;
-    margin-bottom: 23px;
+    margin-bottom: 26px;
   }
 }
 
@@ -145,7 +145,7 @@
   display: block;
   width: max-content;
   max-width: calc(100% - 49px);
-  padding: 20px 0;
+  padding: 18px 0 22px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -156,13 +156,22 @@
   &::after {
     content: "";
     position: absolute;
-    top: calc(50% - 5px);
-    right: -49px;
+    top: calc(50% - 7px);
+    right: -47px;
     width: 32px;
     height: 11px;
     background-image: url("../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
     background-position: left center;
+
+    @media (min-width: $tablet-width) {
+      top: calc(50% - 6px);
+      right: -56px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: -59px;
+    }
   }
 }
 

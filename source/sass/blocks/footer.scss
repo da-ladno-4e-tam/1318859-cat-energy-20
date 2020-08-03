@@ -6,11 +6,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 55px 30px 61px;
+    padding: 40px 30px 43px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 57px 110px 58px;
+    padding: 47px 110px 44px;
   }
 }
 
@@ -27,17 +27,18 @@
 
 .page-footer__social {
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 0 20px;
   border-bottom: 1px solid $border-color-primary;
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
     padding: 0;
+    margin-left: 34px;
   }
 }
 
 .page-footer__copyright {
-  padding: 22px 20px;
+  padding: 19px 0;
 
   @media (min-width: $tablet-width) {
     padding: 0;

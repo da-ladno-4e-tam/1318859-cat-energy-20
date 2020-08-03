@@ -1,0 +1,68 @@
+.field {
+  display: flex;
+  align-items: center;
+  line-height: 112%;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 150%;
+  }
+}
+
+.field__name {
+  min-width: max-content;
+}
+
+.field__input {
+  &:hover {
+    border: $input-border-hover;
+    outline: none;
+  }
+
+  &:focus {
+    outline: none;
+    border: $input-border-active;
+  }
+
+  &:active {
+    border: $input-border-active;
+    outline: none;
+  }
+
+  &:invalid {
+    box-shadow: none;
+  }
+
+  &:invalid:not(:placeholder-shown) {
+    border: $input-border-error;
+    outline: none;
+  }
+
+  &--text {
+    flex-grow: 1;
+    height: 45px;
+    font-family: $font-family-primary;
+    font-size: 16px;
+    line-height: 112%;
+    text-transform: uppercase;
+    color: $special_dark-grey;
+    border: $input-border;
+
+    @media (min-width: $tablet-width) {
+      height: 52px;
+      font-size: 20px;
+      line-height: 150%;
+    }
+  }
+
+  &--check {
+    width: 30px;
+    height: 30px;
+
+    @media (min-width: $tablet-width) {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}

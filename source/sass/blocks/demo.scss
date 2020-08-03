@@ -1,9 +1,9 @@
 .demo {
-  padding: 27px 0 25px;
+  padding: 28px 0 36px;
   background-color: $background_grey;
 
   @media (min-width: $tablet-width) {
-    padding: 43px 0 0;
+    padding: 40px 0 0;
     background-color: $basic_white;
   }
 
@@ -12,19 +12,19 @@
     grid-template-columns: 1fr 1fr;
     align-items: center;
     padding: 0 110px 64px;
-    background: linear-gradient($basic_white 0%, $basic_white 191px, $basic_grey 191px, $basic_grey 100%);
+    background: linear-gradient($basic_white 0%, $basic_white 199px, $basic_grey 199px, $basic_grey 100%);
   }
 }
 
 .demo__description {
-  padding: 0 20px 44px;
+  padding: 0 21px 44px 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 30px 64px;
+    padding: 0 30px 87px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 58px 90px 0 75px;
+    padding: 58px 155px 0 0;
   }
 }
 
@@ -33,7 +33,7 @@
   line-height: 111%;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 63px;
+    margin-bottom: 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -43,13 +43,14 @@
 
 .demo__text {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
   font-family: $font-family-secondary;
   font-size: 14px;
   color: $special_dark-grey;
   line-height: 129%;
 
   @media (min-width: $tablet-width) {
+    max-width: 96%;
     margin-bottom: 54px;
     font-size: 16px;
     line-height: 150%;
@@ -65,10 +66,12 @@
   display: grid;
   grid-template-areas: "weight time" "money money";
   grid-template-columns: 1fr 1fr;
+  grid-column-gap: 31px;
 
   @media (min-width: $tablet-width) {
     grid-template-areas: "weight time money";
     grid-template-columns: min-content min-content 1fr;
+    grid-column-gap: 42px;
   }
 
   @media (min-width: $desktop-width) {
@@ -103,7 +106,7 @@
   &--line {
     @media (min-width: $tablet-width) {
       flex-direction: column;
-      align-items: end;
+      align-items: flex-end;
     }
 
     @media (min-width: $desktop-width) {
@@ -115,10 +118,6 @@
 
   &--weight {
     grid-area: weight;
-
-    @media (min-width: $tablet-width) {
-      margin-right: 42px;
-    }
   }
 
   &--time {
@@ -135,25 +134,28 @@
 
   &--block {
     position: absolute;
-    top: 45px;
+    top: 47px;
     order: 1;
     width: min-content;
-    padding: 0 9px;
+    padding: 0 15px;
     font-family: $font-family-secondary;
     font-size: 12px;
     line-height: 100%;
     color: $special_dark-grey;
     text-align: center;
+    text-transform: lowercase;
     background-color: $background_grey;
 
     @media (min-width: $tablet-width) {
       top: 63px;
       width: max-content;
+      padding: 0 8px;
       font-size: 14px;
       background-color: $basic_white;
     }
 
     @media (min-width: $desktop-width) {
+      top: 61px;
       background-color: $basic_grey;
     }
   }
@@ -166,6 +168,7 @@
     white-space: pre;
 
     @media (min-width: $tablet-width) {
+      margin-bottom: 8px;
       font-size: 20px;
       line-height: 100%;
       white-space: normal;
@@ -181,13 +184,13 @@
   text-transform: uppercase;
 
   &--block {
-    padding: 15px 0 18px;
+    padding: 14px 0 16px;
     font-size: 24px;
     line-height: 100%;
     text-align: center;
 
     @media (min-width: $tablet-width) {
-      padding: 15px 0 20px;
+      padding: 15px 0 18px;
       font-size: 30px;
       line-height: 123%;
     }
@@ -208,8 +211,8 @@
   background-color: $background_grey;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 64px;
-    background: linear-gradient($basic_white 0%, $basic_white 191px, $background_grey 191px, $background_grey 100%);
+    padding-bottom: 61px;
+    background: linear-gradient($basic_white 0%, $basic_white 168px, $background_grey 168px, $background_grey 100%);
   }
 
   @media (min-width: $desktop-width) {
