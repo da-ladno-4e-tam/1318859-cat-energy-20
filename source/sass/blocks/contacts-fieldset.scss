@@ -4,8 +4,9 @@
 
 .contacts-fieldset__title {
   position: relative;
-  margin-bottom: 32px;
-  max-width: 200px;
+  padding-right: 15px;
+  margin-bottom: 33px;
+  max-width: 203px;
   font-size: 24px;
   line-height: 108%;
   background-color: $basic_white;
@@ -14,7 +15,7 @@
     max-width: 100%;
     margin-bottom: 76px;
     padding-right: 40px;
-    padding-left: 40px;
+    padding-left: 37px;
     font-size: 36px;
     line-height: 100%;
   }
@@ -22,52 +23,43 @@
   &::after {
     content: "";
     position: absolute;
-    width: calc(100vw - 46px);
+    width: calc(100vw - 18px);
     height: 2px;
-    top: 17px;
+    top: 16px;
     left: 0;
     background-color: $basic_green;
     z-index: -1;
 
     @media (min-width: $tablet-width) {
-      width: calc(100vw - 30px);
-      top: 23px;
-      left: -30px;
+      width: 100vw;
+      top: 22px;
+      left: -32px;
     }
 
     @media (min-width: $desktop-width) {
-      width: calc(100vw - 16px);
-      left: calc((1440px - 100vw) / 2 - 70px);
+      left: -105px;
     }
   }
 }
 
 .contacts-fieldset__wrapper {
   @media (min-width: $tablet-width) {
-    padding: 0 40px;
+    padding: 0 34px 0 39px;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 80px;
+    grid-gap: 71px;
   }
 }
 
 .contacts-fieldset__label {
-  display: flex;
-  align-items: center;
-  line-height: 112%;
-  text-transform: uppercase;
+  position: relative;
   color: $special_dark-grey;
 
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 150%;
-  }
-
   &:not(:last-child) {
-    margin-bottom: 14px;
+    margin-bottom: 13px;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 20px;
@@ -81,10 +73,13 @@
 
 .contacts-fieldset__name {
   padding-right: 13px;
-  min-width: max-content;
 
   @media (min-width: $tablet-width) {
-    padding-right: 18px;
+    padding-right: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 17px;
   }
 }
 
@@ -92,7 +87,7 @@
   position: relative;
   flex-grow: 1;
   height: 45px;
-  padding-left: 15px;
+  padding-left: 14px;
   padding-right: 35px;
   font-family: $font-family-primary;
   font-size: 16px;
@@ -101,10 +96,44 @@
   color: $special_dark-grey;
   border: $input-border;
 
+  &:valid + .contacts-fieldset__icon {
+    fill: $basic_green;
+  }
+
+  &:invalid:not(:placeholder-shown) + .contacts-fieldset__icon {
+    fill: $status_error;
+  }
+
   @media (min-width: $tablet-width) {
     height: 52px;
     padding: 0 19px;
     font-size: 20px;
     line-height: 150%;
+  }
+}
+
+.contacts-fieldset__icon {
+  content: "";
+  position: absolute;
+  fill: $special_dark-grey-2;
+
+  &--email {
+    top: 17px;
+    right: 19px;
+
+    @media (min-width: $desktop-width) {
+      top: 20px;
+      right: 26px;
+    }
+  }
+
+  &--phone {
+    top: 14px;
+    right: 15px;
+
+    @media (min-width: $desktop-width) {
+      top: 16px;
+      right: 21px;
+    }
   }
 }

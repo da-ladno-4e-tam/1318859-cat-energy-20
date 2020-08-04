@@ -1,12 +1,16 @@
 .map {
+  height: 362px;
   background-image: url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 }
 
 .map__image {
   width: 100%;
-  height: auto;
-  min-height: 362px;
+  height: 100%;
   border: none;
 }

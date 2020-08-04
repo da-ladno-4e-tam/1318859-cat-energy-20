@@ -9,13 +9,13 @@
 }
 
 .contacts__description {
-  padding: 28px 20px 22px;
+  padding: 28px 20px 26px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    padding: 63px 70px 59px;
+    padding: 63px 71px 59px;
   }
 
   @media (min-width: $desktop-width) {
@@ -23,7 +23,7 @@
     top: 95px;
     left: 110px;
     width: 570px;
-    padding: 63px 89px 60px 76px;
+    padding: 65px 83px 60px 76px;
     background-color: $basic_white;
   }
 }
@@ -40,7 +40,7 @@
   @media (min-width: $tablet-width) {
     max-width: 171px;
     font-size: 20px;
-    line-height: 105%;
+    line-height: 125%;
   }
 }
 

@@ -6,7 +6,7 @@
   position: relative;
   max-width: 200px;
   margin-bottom: 34px;
-  padding-right: 22px;
+  padding-right: 23px;
   font-size: 24px;
   line-height: 108%;
   background-color: $basic_white;
@@ -15,7 +15,7 @@
     max-width: 100%;
     margin-bottom: 76px;
     padding-right: 40px;
-    padding-left: 40px;
+    padding-left: 37px;
     font-size: 36px;
     line-height: 100%;
   }
@@ -23,29 +23,28 @@
   &::after {
     content: "";
     position: absolute;
-    width: calc(100vw - 46px);
+    width: calc(100vw - 18px);
     height: 2px;
-    top: 16px;
+    top: 15px;
     left: 0;
     background-color: $basic_green;
     z-index: -1;
 
     @media (min-width: $tablet-width) {
-      width: calc(100vw - 30px);
-      top: 23px;
-      left: -30px;
+      width: 100vw;
+      top: 22px;
+      left: -32px;
     }
 
     @media (min-width: $desktop-width) {
-      width: calc(100vw - 16px);
-      left: calc((1440px - 100vw) / 2 - 70px);
+      left: -105px;
     }
   }
 }
 
 .comment-fieldset__wrapper {
   @media (min-width: $tablet-width) {
-    padding: 0 40px;
+    padding: 0 35px 0 38px;
   }
 }
 
@@ -57,12 +56,16 @@
   font-size: 16px;
   line-height: 112%;
   text-transform: uppercase;
-  color: $special_dark-grey;
   border: $input-border;
   resize: none;
 
+  &::placeholder {
+    color: $special_dark-grey;
+  }
+
   @media (min-width: $tablet-width) {
-    padding: 10px 19px;
+    height: 174px;
+    padding: 9px 18px;
     font-size: 20px;
     line-height: 150%;
   }

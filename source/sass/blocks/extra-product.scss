@@ -6,14 +6,15 @@
 
 .extra-product__item {
   padding-top: 13px;
-  padding-bottom: 19px;
+  padding-bottom: 17px;
   border-top: $border-common;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-areas: "title unit" "button button";
     justify-content: space-between;
-    padding: 27px 37px;
+    align-items: baseline;
+    padding: 25px 37px 26px;
     border: $border-common;
     border-bottom: none;
   }
@@ -21,14 +22,13 @@
   @media (min-width: $desktop-width) {
     grid-template-areas: "title unit button";
     grid-template-columns: 325px 1fr 284px;
-    align-items: center;
-    padding: 16px 0;
+    align-items: baseline;
+    padding: 16px 0 15px;
     border-left: none;
     border-right: none;
   }
 
   &:last-child {
-    align-items: center;
     border-bottom: $border-common;
   }
 }
@@ -46,7 +46,7 @@
     grid-area: title;
     min-width: 325px;
     padding-right: 20px;
-    margin-bottom: 28px;
+    margin-bottom: 27px;
     font-size: 20px;
   }
 
@@ -68,7 +68,6 @@
     grid-area: unit;
     font-size: 16px;
     line-height: 125%;
-    align-items: baseline;
   }
 
   @media (min-width: $desktop-width) {
@@ -81,12 +80,14 @@
 
   @media (min-width: $tablet-width) {
     padding-left: 20px;
-    min-width: 90px;
+    min-width: 94px;
     text-align: right;
   }
 }
 
 .extra-product__link {
+  font-size: 16px;
+
   @media (min-width: $tablet-width) {
     grid-area: button;
   }
