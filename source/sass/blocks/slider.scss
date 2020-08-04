@@ -2,6 +2,7 @@
   display: grid;
   grid-template-areas: "image_before image_before image_before" "image_after image_after image_after" "text_before toggle text_after";
   grid-template-columns: 1fr 84px 1fr;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 430px 1fr;
@@ -66,5 +67,52 @@
 }
 
 .slider__toggle {
+  position: relative;
   grid-area: toggle;
+  width: 84px;
+  height: 14px;
+  border: $border-common;
+  border-radius: 7px;
+  background-color: $basic_white;
+
+  @media (min-width: $tablet-width) {
+    width: 428px;
+    height: 6px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 3px;
+    background-color: $special_grey;
+    cursor: pointer;
+
+    &:hover::after {
+      box-shadow: inset 0 0 0 12px $basic_white, $shadow_hover-box-shadow;
+    }
+
+    &:active::after {
+      border: 1px solid $basic_green;
+      box-shadow: inset 0 0 0 12px $basic_white, $shadow_pressed-box-shadow;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: calc(50% - 3px);
+    left: 6px;
+    width: 35px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: $basic_green;
+
+    @media (min-width: $tablet-width) {
+      top: calc(50% - 17px);
+      left: calc(50% - 17px);
+      width: 34px;
+      height: 34px;
+      border: 1px solid $special_grey;
+      box-shadow: inset 0 0 0 12px $basic_white, $shadow_normal-box-shadow;
+      border-radius: 50%;
+      background-color: $basic_green;
+    }
+  }
 }

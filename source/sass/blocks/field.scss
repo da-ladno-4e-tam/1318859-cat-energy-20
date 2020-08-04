@@ -15,6 +15,10 @@
 }
 
 .field__input {
+  &::placeholder {
+    color: $special_dark-grey;
+  }
+
   &:hover {
     border: $input-border-hover;
     outline: none;
