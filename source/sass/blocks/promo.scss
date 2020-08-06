@@ -4,11 +4,11 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
-    padding: 64px 117px 526px;
+    padding: 61px 117px 526px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 113px 190px 269px;
+    padding: 107px 190px 269px;
   }
 }
 
@@ -57,7 +57,8 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 263px;
+    top: 261px;
+    left: 29px;
     width: 709px;
     height: 609px;
     z-index: -1;
@@ -65,7 +66,7 @@
 
   @media (min-width: $desktop-width) {
     top: 25px;
-    left: 615px;
+    left: 558px;
     width: 552px;
     height: 499px;
   }

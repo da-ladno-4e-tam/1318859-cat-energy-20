@@ -13,11 +13,25 @@
   }
 }
 
-.slider__text {
+.slider__button {
+  position: relative;
   margin: 0;
+  padding: 0;
+  font-family: $font-family-primary;
   font-size: 16px;
   line-height: 125%;
   text-transform: uppercase;
+  border: none;
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.24);
+  background-color: inherit;
+
+  &:hover {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  }
+
+  &:active {
+    border-bottom: none;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -27,6 +41,7 @@
   &--before {
     grid-area: text_before;
     margin-right: 17px;
+    margin-left: auto;
     text-align: right;
 
     @media (min-width: $tablet-width) {
@@ -36,24 +51,33 @@
 
   &--after {
     grid-area: text_after;
+    margin-right: auto;
     margin-left: 18px;
+    text-align: left;
   }
 }
 
 .slider__image {
-  margin-right: auto;
-  margin-bottom: 22px;
-  margin-left: auto;
+  margin-bottom: 16px;
+  margin-left: -6px;
   width: 100%;
   height: auto;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
 
   @media (min-width: $tablet-width) {
     width: 690px;
     height: 517px;
+    margin-bottom: 14px;
+    margin-left: 46px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: -80px;
+    margin-bottom: 36px;
+    margin-left: -78px;
   }
 
   &--before {

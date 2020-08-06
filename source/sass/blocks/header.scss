@@ -2,14 +2,22 @@
   padding-top: 12px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 52px;
+  }
+}
+
+.page-header__container {
+  @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    padding-top: 33px;
   }
 
   @media (min-width: $desktop-width) {
     justify-content: flex-start;
-    padding-top: 69px;
   }
 }
 
@@ -30,12 +38,12 @@
 
 .page-header__nav {
   @media (min-width: $tablet-width) {
-    padding-top: 9px;
+    padding-top: 20px;
     padding-right: 30px;
   }
 
   @media (min-width: $desktop-width) {
     width: 50%;
-    padding: 0 110px 0 0;
+    padding: 17px 110px 0 0;
   }
 }
