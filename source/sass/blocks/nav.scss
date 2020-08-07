@@ -20,7 +20,6 @@
       content: "";
       position: absolute;
       width: 100vw;
-      max-width: 100%;
       height: 95.3vw;
       background-color: $basic_green;
       background-image: url("../img/index-background-mobile@1x.jpg");
@@ -35,10 +34,18 @@
 
       @media (min-width: $desktop-width) {
         display: block;
-        top: -70px;
-        width: 50vw;
+        top: -54px;
+        width: calc(50vw - 17px);
         height: 696px;
         background-image: url("../img/index-background-desktop@1x.jpg");
+      }
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/index-background-mobile@2x.jpg");
+
+        @media (min-width: $desktop-width) {
+          background-image: url("../img/index-background-desktop@2x.jpg");
+        }
       }
     }
 
@@ -159,7 +166,7 @@
     border-bottom: 2px solid $basic_green;
 
     @media (min-width: $tablet-width) {
-      padding: 0 0 9px;
+      padding: 0 0 6px;
     }
   }
 }

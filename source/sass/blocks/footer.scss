@@ -3,14 +3,24 @@
   background-color: $basic_grey;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px 30px 43px;
+    padding: 38px 30px 44px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 47px 110px 44px;
+    padding: 43px 0 42px;
+  }
+}
+
+.page-footer__container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 110px;
+    padding-left: 110px;
   }
 }
 
@@ -38,7 +48,7 @@
 }
 
 .page-footer__copyright {
-  padding: 19px 0;
+  padding: 18px 0 20px;
 
   @media (min-width: $tablet-width) {
     padding: 0;

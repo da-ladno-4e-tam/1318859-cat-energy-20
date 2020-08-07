@@ -4,15 +4,21 @@
 
   @media (min-width: $tablet-width) {
     padding: 40px 0 0;
-    background-color: $basic_white;
+    background: linear-gradient($basic_white 0%, $basic_white 618px, $background_grey 618px, $background_grey 100%);
   }
 
+  @media (min-width: $desktop-width) {
+    padding: 0 0 64px;
+    background: linear-gradient($basic_white 0%, $basic_white 199px, $basic_grey 199px, $basic_grey 100%);
+  }
+}
+
+.demo__wrapper {
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    padding: 0 110px 64px;
-    background: linear-gradient($basic_white 0%, $basic_white 199px, $basic_grey 199px, $basic_grey 100%);
+    padding: 0 110px;
   }
 }
 
@@ -208,15 +214,12 @@
 }
 
 .demo__slider {
-  background-color: $background_grey;
-
   @media (min-width: $tablet-width) {
-    padding-bottom: 61px;
-    background: linear-gradient($basic_white 0%, $basic_white 168px, $background_grey 168px, $background_grey 100%);
+    padding-bottom: 68px;
   }
 
   @media (min-width: $desktop-width) {
     padding-bottom: 0;
-    background: none;
+    margin-left: 39px;
   }
 }

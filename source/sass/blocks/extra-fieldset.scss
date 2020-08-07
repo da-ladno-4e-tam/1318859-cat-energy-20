@@ -33,11 +33,11 @@
     @media (min-width: $tablet-width) {
       width: 100vw;
       top: 22px;
-      left: -32px;
+      left: calc((384px - 50vw) - 32px);
     }
 
     @media (min-width: $desktop-width) {
-      left: -105px;
+      left: calc((720px - 50vw) - 89px);
     }
   }
 }
