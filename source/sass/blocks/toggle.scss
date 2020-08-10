@@ -1,4 +1,5 @@
 .toggle {
+  position: relative;
   width: 24px;
   height: 18px;
   border: none;
@@ -7,10 +8,36 @@
   background-position: center;
 
   &--open {
-    background-image: url("../img/icon-mobile-menu.svg");
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 24px;
+      height: 1.5px;
+      background-color: $basic_black;
+      box-shadow: 0 8px 0 0 $basic_black, 0 16px 0 0 $basic_black;
+    }
   }
 
   &--close {
-    background-image: url("../img/icon-close.svg");
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: -4px;
+      left: 11px;
+      width: 1.5px;
+      height: 25px;
+      background-color: $basic_black;
+    }
+
+    &::before {
+      transform: rotate(-45deg);
+    }
+
+    &::after {
+      transform: rotate(45deg);
+    }
   }
 }

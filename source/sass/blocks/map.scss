@@ -6,6 +6,23 @@
 
   @media (min-width: $tablet-width) {
     height: 400px;
+    background-image: url("../img/bg-map-tablet@1x.png");
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/bg-map-desktop@1x.png");
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bg-map-mobile@2x.png");
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/bg-map-tablet@2x.png");
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../img/bg-map-desktop@2x.png");
+    }
   }
 }
 
