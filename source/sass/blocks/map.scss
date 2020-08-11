@@ -13,7 +13,7 @@
     background-image: url("../img/bg-map-desktop@1x.png");
   }
 
-  @media (min-resolution: 2dppx) {
+  @media (min-resolution: $retina) {
     background-image: url("../img/bg-map-mobile@2x.png");
 
     @media (min-width: $tablet-width) {
