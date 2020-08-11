@@ -143,8 +143,7 @@
 .offer__link-text {
   position: relative;
   display: block;
-  width: max-content;
-  max-width: calc(100% - 49px);
+  width: 100%;
   padding: 18px 0 22px;
 
   @media (min-width: $tablet-width) {
@@ -178,14 +177,22 @@
 .offer__link {
   position: relative;
   display: block;
-  width: 100%;
+  width: max-content;
+  max-width: calc(100% - 49px);
   height: 100%;
   font-size: 16px;
   line-height: 100%;
   text-transform: uppercase;
   text-decoration: none;
-
   color: $basic_black;
+
+  @media (min-width: $tablet-width) {
+    max-width: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: calc(100% - 49px);
+  }
 
   &:hover {
     .offer__link-text::after {
