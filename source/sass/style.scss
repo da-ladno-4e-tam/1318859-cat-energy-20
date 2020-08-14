@@ -1,6 +1,7 @@
 @import "variables.scss";
 @import "fonts.scss";
 @import "global.scss";
+@import "blocks/no-js";
 @import "blocks/visually-hidden.scss";
 @import "blocks/uppercase.scss";
 @import "blocks/logo.scss";
@@ -36,3 +37,4 @@
 @import "blocks/social.scss";
 @import "blocks/copyright.scss";
 @import "blocks/footer.scss";
+@import "blocks/hidden";
