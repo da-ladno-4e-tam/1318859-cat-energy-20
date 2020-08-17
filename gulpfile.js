@@ -21,8 +21,7 @@ const copy = () => {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
-    "source/js/**",
-    "source/*.html",
+    "source/js/**/*.js",
     "source/*.ico"
   ], {
     base: "source"
@@ -30,6 +29,12 @@ const copy = () => {
     .pipe(gulp.dest("build"));
 };
 exports.copy = copy;
+
+const html = () => {
+  return gulp.src("source/*.html")
+    .pipe(gulp.dest("build"));
+};
+exports.html = html;
 
 // svg
 const sprite = () => {
@@ -77,13 +82,14 @@ const styles = () => {
 };
 exports.styles = styles;
 
-const build = () => {
+const build = (done) => {
   gulp.series(
-    "clean",
-    "copy",
-    "styles",
-    "sprite"
-  );
+    clean,
+    copy,
+    html,
+    styles,
+    sprite
+  )(done)
 };
 exports.build = build;
 
@@ -92,7 +98,7 @@ exports.build = build;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'source'
+      baseDir: "build"
     },
     cors: true,
     notify: false,
@@ -102,16 +108,18 @@ const server = (done) => {
 };
 exports.server = server;
 
-const start = () => gulp.series(
-  "build",
-  "server"
-);
+const start = (done) => {
+  gulp.series(
+    build,
+    server
+  )(done)
+};
 exports.start = start;
 
 // Watcher
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
-  gulp.watch("source/*.html").on("change", sync.reload);
+  gulp.watch("source/*.html", gulp.series("html")).on("change", sync.reload);
 };
 
 exports.default = gulp.series(
