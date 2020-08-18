@@ -21,6 +21,7 @@
   font-size: 16px;
   line-height: 125%;
   text-transform: uppercase;
+  color: $basic_black;
   border: none;
   border-bottom: 1px dotted rgba(0, 0, 0, 0.24);
   background-color: inherit;
@@ -59,8 +60,8 @@
 }
 
 .slider__image {
-  margin-bottom: 16px;
-  margin-left: -6px;
+  margin-top: -10px;
+  margin-bottom: 26px;
   width: 100%;
   height: auto;
 
@@ -72,6 +73,7 @@
   @media (min-width: $tablet-width) {
     width: 690px;
     height: 517px;
+    margin-top: 0;
     margin-bottom: 14px;
     margin-left: 46px;
   }

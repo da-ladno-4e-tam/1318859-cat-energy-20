@@ -8,13 +8,13 @@
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 60px;
     grid-row-gap: 142px;
-    padding: 0 30px 69px;
+    padding: 0 30px 68px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap: 77px;
     grid-row-gap: 139px;
-    padding: 0 110px 74px;
+    padding: 0 110px 72px;
   }
 }

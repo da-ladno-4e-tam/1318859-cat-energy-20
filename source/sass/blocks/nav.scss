@@ -136,6 +136,10 @@
     font-weight: normal;
   }
 
+  @media (min-width: $desktop-width) {
+    color: $basic_dark-grey;
+  }
+
   &:hover {
     opacity: 0.6;
   }

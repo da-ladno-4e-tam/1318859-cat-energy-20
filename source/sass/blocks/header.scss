@@ -15,23 +15,17 @@
     display: flex;
     justify-content: space-between;
   }
-
-  @media (min-width: $desktop-width) {
-    justify-content: flex-start;
-  }
 }
 
 .page-header__logo {
   padding: 0 20px 11px;
-  width: 80%;
+  width: max-content;
 
   @media (min-width: $tablet-width) {
     padding: 0 30px;
-    width: auto;
   }
 
   @media (min-width: $desktop-width) {
-    width: 50%;
     padding: 0 0 0 110px;
   }
 }
