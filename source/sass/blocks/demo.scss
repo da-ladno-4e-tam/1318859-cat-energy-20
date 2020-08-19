@@ -1,6 +1,7 @@
 .demo {
   padding: 28px 0 36px;
   background-color: $background_grey;
+  overflow-wrap: break-word;
 
   @media (min-width: $tablet-width) {
     padding: 47px 0 0;

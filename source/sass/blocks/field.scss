@@ -20,26 +20,22 @@
   }
 
   &:hover {
-    border: $input-border-hover;
-    outline: none;
+    outline: $input-border-hover;
   }
 
   &:focus {
-    outline: none;
-    border: $input-border-active;
+    outline: $input-border-active;
   }
 
   &:active {
-    border: $input-border-active;
-    outline: none;
+    outline: $input-border-active;
   }
 
   &:invalid {
     box-shadow: none;
 
     &:not(:placeholder-shown) {
-      border: $input-border-error;
-      outline: none;
+      outline: $input-border-error;
     }
   }
 

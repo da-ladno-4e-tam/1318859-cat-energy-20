@@ -104,7 +104,7 @@
     fill: $basic_green;
   }
 
-  &:invalid:not(:placeholder-shown) + .contacts-fieldset__icon {
+  &:focus:invalid:not(:placeholder-shown) + .contacts-fieldset__icon {
     fill: $status_error;
   }
 

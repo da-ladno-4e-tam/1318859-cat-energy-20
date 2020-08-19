@@ -78,7 +78,7 @@
 }
 
 .nav__list {
-  display: flex;
+  display: none;
   flex-direction: column;
   margin: 0;
   padding: 0;
@@ -129,6 +129,7 @@
   padding: 23px 20px;
   color: $basic_black;
   text-decoration: none;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     width: max-content;
@@ -140,7 +141,8 @@
     color: $basic_dark-grey;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 0.6;
   }
 

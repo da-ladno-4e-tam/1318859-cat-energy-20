@@ -2,6 +2,7 @@
   position: relative;
   margin: 0;
   background-color: $basic_grey;
+  overflow-wrap: break-word;
 
   &::before {
     content: "";
@@ -95,6 +96,7 @@
   font-size: 24px;
   line-height: 154%;
   text-transform: uppercase;
+  /*overflow-wrap: break-word;*/
 
   @media (min-width: $tablet-width) {
     padding-left: 0;
@@ -116,6 +118,7 @@
   font-size: 14px;
   color: $special_dark-grey;
   line-height: 129%;
+  /*overflow-wrap: break-word;*/
   border-bottom: 1px solid $border-color-primary;
 
   @media (min-width: $tablet-width) {
