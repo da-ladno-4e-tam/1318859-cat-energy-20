@@ -3,7 +3,7 @@
   background-color: $background_grey;
 
   @media (min-width: $tablet-width) {
-    padding: 40px 0 0;
+    padding: 47px 0 0;
     background: linear-gradient($basic_white 0%, $basic_white 618px, $background_grey 618px, $background_grey 100%);
   }
 
@@ -40,6 +40,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 60px;
+    line-height: 100%;
   }
 
   @media (min-width: $desktop-width) {

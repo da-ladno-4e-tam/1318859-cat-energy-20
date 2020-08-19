@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи. Подбор программы</title>
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body>
 
@@ -43,7 +43,7 @@
       </picture>
     </a>
     <nav class="page-header__nav nav">
-      <button class="nav__toggle toggle toggle--close" type="button">
+      <button class="nav__toggle toggle no-js toggle--open" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <ul class="nav__list">
@@ -80,15 +80,21 @@
         <div class="main-fieldset__cat-info cat-info">
           <label class="cat-info__label field">
             <span class="cat-info__name field__name">Имя:*</span>
-            <input class="cat-info__input field__input field__input--text" name="name" type="text" placeholder="Барсик" required>
+            <span class="field__input-wrapper">
+              <input class="cat-info__input field__input field__input--text" name="name" type="text" placeholder="Барсик" required>
+            </span>
           </label>
           <label class="cat-info__label field">
             <span class="cat-info__name">Вес (кг):*</span>
-            <input class="cat-info__input field__input field__input--text" name="weight" type="number" min="0" max="100" placeholder="7" required>
+            <span class="field__input-wrapper">
+              <input class="cat-info__input field__input field__input--text" name="weight" type="number" min="0" max="100" placeholder="7" required>
+            </span>
           </label>
           <label class="cat-info__label field">
             <span class="cat-info__name">Возраст (лет):</span>
-            <input class="cat-info__input field__input field__input--text" name="age" type="number" min="0" max="100" placeholder="7">
+            <span class="field__input-wrapper">
+              <input class="cat-info__input field__input field__input--text" name="age" type="number" min="0" max="100" placeholder="7">
+            </span>
           </label>
         </div>
         <div class="main-fieldset__programm programm">
@@ -112,17 +118,21 @@
       <div class="contacts-fieldset__wrapper">
         <label class="contacts-fieldset__label field">
           <span class="contacts-fieldset__name field__name">E-mail:*</span>
-          <input class="contacts-fieldset__input field__input field__input--text" name="email" type="email" placeholder="kuklachev@gmail.com" pattern="^.+@.+\..+$" required>
-          <svg class="contacts-fieldset__icon contacts-fieldset__icon--email" width="17" height="13">
-            <use xlink:href="#icon-email"></use>
-          </svg>
+          <span class="field__input-wrapper">
+            <input class="contacts-fieldset__input field__input field__input--text" name="email" type="email" placeholder="kuklachev@gmail.com" pattern="^.+@.+\..+$" required>
+            <svg class="contacts-fieldset__icon contacts-fieldset__icon--email" width="17" height="13">
+              <use xlink:href="#icon-email"></use>
+            </svg>
+          </span>
         </label>
         <label class="contacts-fieldset__label field">
           <span class="contacts-fieldset__name field__name">Телефон:*</span>
-          <input class="contacts-fieldset__input field__input field__input--text" name="phone" type="tel" placeholder="8 (960) 900-60-90" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" required>
-          <svg class="contacts-fieldset__icon contacts-fieldset__icon--phone" width="20" height="20">
-            <use xlink:href="#icon-phone"></use>
-          </svg>
+          <span class="field__input-wrapper">
+            <input class="contacts-fieldset__input field__input field__input--text" name="phone" type="tel" placeholder="8 (960) 900-60-90" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" required>
+            <svg class="contacts-fieldset__icon contacts-fieldset__icon--phone" width="20" height="20">
+              <use xlink:href="#icon-phone"></use>
+            </svg>
+          </span>
         </label>
       </div>
     </fieldset>
@@ -167,7 +177,7 @@
     </div>
 
     <div class="contacts__map map">
-      <iframe class="map__image" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4234.828814742169!2d30.320110179856925!3d59.93922640595866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1595161310637!5m2!1sen!2sru" width="320" height="362" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      <div class="map__image" id="map"></div>
     </div>
   </section>
 </main>
@@ -210,6 +220,10 @@
     </div>
   </div>
 </footer>
+
+<script src="js/burger.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmArTcCACW5ROdBrj9EzqHTw3vh0ks8cQ&callback=initMap"></script>
+<script src="js/map.js"></script>
 
 </body>
 </html>

@@ -20,6 +20,10 @@
     line-height: 100%;
   }
 
+  @media (min-width: $desktop-width) {
+    margin-bottom: 74px;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -88,7 +92,7 @@
   flex-grow: 1;
   height: 45px;
   padding-left: 14px;
-  padding-right: 35px;
+  padding-right: 43px;
   font-family: $font-family-primary;
   font-size: 16px;
   line-height: 112%;
@@ -109,6 +113,10 @@
     padding: 0 19px;
     font-size: 20px;
     line-height: 150%;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 18px;
   }
 }
 

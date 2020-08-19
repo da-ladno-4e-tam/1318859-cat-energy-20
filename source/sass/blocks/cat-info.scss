@@ -12,6 +12,7 @@
 
 .cat-info__name {
   padding-right: 14px;
+  white-space: nowrap;
 
   @media (min-width: $tablet-width) {
     padding-right: 17px;
@@ -19,7 +20,6 @@
 }
 
 .cat-info__input {
-  flex-grow: 1;
   height: 45px;
   padding: 0 15px;
   font-family: $font-family-primary;
@@ -33,5 +33,9 @@
     padding: 0 19px;
     font-size: 20px;
     line-height: 150%;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 16px;
   }
 }

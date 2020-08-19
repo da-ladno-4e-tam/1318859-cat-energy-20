@@ -73,6 +73,10 @@
     margin-right: 20px;
   }
 
+  @media (min-width: $desktop-width) {
+    margin-right: 18px;
+  }
+
   &:checked + .programm__name::after {
     background-color: $basic_green;
   }

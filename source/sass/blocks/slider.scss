@@ -21,9 +21,11 @@
   font-size: 16px;
   line-height: 125%;
   text-transform: uppercase;
+  color: $basic_black;
   border: none;
   border-bottom: 1px dotted rgba(0, 0, 0, 0.24);
   background-color: inherit;
+  cursor: pointer;
 
   &:hover {
     border-bottom: 1px solid rgba(0, 0, 0, 0.4);
@@ -58,8 +60,8 @@
 }
 
 .slider__image {
-  margin-bottom: 16px;
-  margin-left: -6px;
+  margin-top: -10px;
+  margin-bottom: 26px;
   width: 100%;
   height: auto;
 
@@ -71,6 +73,7 @@
   @media (min-width: $tablet-width) {
     width: 690px;
     height: 517px;
+    margin-top: 0;
     margin-bottom: 14px;
     margin-left: 46px;
   }
@@ -82,7 +85,6 @@
 
   &--before {
     grid-area: image_before;
-    display: none;
   }
 
   &--after {
@@ -108,13 +110,15 @@
     background-color: $special_grey;
     cursor: pointer;
 
-    &:hover::after {
-      box-shadow: inset 0 0 0 12px $basic_white, $shadow_hover-box-shadow;
-    }
+    @media (min-width: $tablet-width) {
+      &:hover::after {
+        box-shadow: inset 0 0 0 12px $basic_white, $shadow_hover-box-shadow;
+      }
 
-    &:active::after {
-      border: 1px solid $basic_green;
-      box-shadow: inset 0 0 0 12px $basic_white, $shadow_pressed-box-shadow;
+      &:active::after {
+        border: 1px solid $basic_green;
+        box-shadow: inset 0 0 0 12px $basic_white, $shadow_pressed-box-shadow;
+      }
     }
   }
 
@@ -137,6 +141,28 @@
       box-shadow: inset 0 0 0 12px $basic_white, $shadow_normal-box-shadow;
       border-radius: 50%;
       background-color: $basic_green;
+    }
+  }
+
+  &--left {
+    &::after {
+      width: 0;
+
+      @media (min-width: $tablet-width) {
+        left: -17px;
+        width: 34px;
+      }
+    }
+  }
+
+  &--right {
+    &::after {
+      width: calc(100% - 12px);
+
+      @media (min-width: $tablet-width) {
+        left: calc(100% - 17px);
+        width: 34px;
+      }
     }
   }
 }

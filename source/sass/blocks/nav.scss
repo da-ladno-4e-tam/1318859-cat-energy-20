@@ -40,7 +40,7 @@
         background-image: url("../img/index-background-desktop@1x.jpg");
       }
 
-      @media (min-resolution: $retina) {
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/index-background-mobile@2x.jpg");
 
         @media (min-width: $desktop-width) {
@@ -134,6 +134,10 @@
     width: max-content;
     padding: 0 0 0 36px;
     font-weight: normal;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: $basic_dark-grey;
   }
 
   &:hover {
