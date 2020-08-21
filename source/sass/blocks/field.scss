@@ -10,10 +10,6 @@
   }
 }
 
-.field__name {
-  min-width: max-content;
-}
-
 .field__input {
   &::placeholder {
     color: $special_dark-grey;
@@ -57,7 +53,7 @@
   }
 
   &--check {
-    width: 30px;
+    min-width: 30px;
     height: 30px;
 
     @media (min-width: $tablet-width) {
@@ -68,5 +64,7 @@
 }
 
 .field__input-wrapper {
+  position: relative;
   flex-grow: 1;
+  min-width: 50%;
 }

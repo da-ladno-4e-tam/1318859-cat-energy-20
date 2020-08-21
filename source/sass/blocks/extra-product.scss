@@ -58,6 +58,7 @@
 .extra-product__unit {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 15px;
   font-family: $font-family-secondary;
   font-size: 14px;
@@ -75,8 +76,13 @@
   }
 }
 
+.extra-product__quantity {
+  max-width: 48%;
+}
+
 .extra-product__price {
   text-transform: uppercase;
+  max-width: 48%;
 
   @media (min-width: $tablet-width) {
     padding-left: 20px;
@@ -87,7 +93,6 @@
 
 .extra-product__link {
   font-size: 16px;
-  line-height: 0;
 
   @media (min-width: $tablet-width) {
     grid-area: button;

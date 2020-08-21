@@ -5,11 +5,14 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: 1fr 430px 1fr;
+    width: 690px;
+    margin: 0 auto;
+    grid-template-areas: "image_before image_before . image_after image_after" "text_before toggle toggle toggle text_after";
+    grid-template-columns: 70px 275px 0 275px 70px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 71px 430px 69px;
+    /*grid-template-columns: 71px 430px 69px;*/
   }
 }
 
@@ -47,7 +50,7 @@
     text-align: right;
 
     @media (min-width: $tablet-width) {
-      margin-right: 24px;
+      margin-right: -24px;
     }
   }
 
@@ -56,6 +59,10 @@
     margin-right: auto;
     margin-left: 18px;
     text-align: left;
+
+    @media (min-width: $tablet-width) {
+      margin-left: -25px;
+    }
   }
 }
 
@@ -64,6 +71,7 @@
   margin-bottom: 26px;
   width: 100%;
   height: auto;
+  overflow: hidden;
 
   img {
     width: 100%;
@@ -71,11 +79,15 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 690px;
+    width: 345px;
     height: 517px;
     margin-top: 0;
     margin-bottom: 14px;
     margin-left: 46px;
+
+    img {
+      width: 200%;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -89,6 +101,12 @@
 
   &--after {
     grid-area: image_after;
+
+    @media (min-width: $tablet-width) {
+      img {
+        margin-left: -345px;
+      }
+    }
   }
 }
 

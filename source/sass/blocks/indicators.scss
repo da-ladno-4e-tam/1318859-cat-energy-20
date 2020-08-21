@@ -5,6 +5,7 @@
 .indicators__item {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 1px;
   font-family: $font-family-secondary;
   font-size: 12px;
@@ -21,11 +22,16 @@
 }
 
 .indicators__name {
+  max-width: 48%;
   margin: 0;
   order: -1;
+  word-break: break-word;
 }
 
 .indicators__value {
+  max-width: 48%;
+  word-break: break-word;
+
   @media (min-width: $desktop-width) {
     padding-right: 5px;
   }

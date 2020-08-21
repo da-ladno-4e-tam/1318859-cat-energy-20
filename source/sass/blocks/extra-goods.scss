@@ -1,5 +1,6 @@
 .extra-goods {
   padding: 28px 0 34px;
+  overflow-wrap: break-word;
 
   @media (min-width: $tablet-width) {
     padding: 0 0 75px;

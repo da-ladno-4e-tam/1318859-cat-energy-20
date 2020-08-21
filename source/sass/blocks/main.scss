@@ -29,6 +29,7 @@
   font-size: 14px;
   line-height: 129%;
   text-transform: uppercase;
+  overflow-wrap: break-word;
 
   @media (min-width: $tablet-width) {
     max-width: 470px;
