@@ -1,8 +1,13 @@
 .page-header {
   padding-top: 12px;
 
+  &--not-main {
+    border-bottom: 1px solid $border-color-primary;
+  }
+
   @media (min-width: $tablet-width) {
     padding-top: 23px;
+    border-bottom: none;
   }
 
   @media (min-width: $desktop-width) {

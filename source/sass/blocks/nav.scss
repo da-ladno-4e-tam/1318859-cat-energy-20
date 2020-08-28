@@ -90,12 +90,14 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: baseline;
     max-width: 478px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 132px;
+    max-width: none;
+    padding-left: 130px;
   }
 }
 
@@ -106,8 +108,11 @@
   border-top: 1px solid $border-color-secondary;
 
   @media (min-width: $tablet-width) {
+    max-width: 154px;
+    margin-right: 35px;
+    margin-bottom: 10px;
+    word-break: break-word;
     border: none;
-
 
     &:first-child .nav__link {
       padding: 0;
@@ -115,10 +120,16 @@
     }
   }
 
+  @media (min-width: $desktop-width) {
+    max-width: 171px;
+    margin-right: 35px;
+  }
+
   &:last-child {
     border-bottom: 1px solid $border-color-secondary;
 
     @media (min-width: $tablet-width) {
+      margin-right: 0;
       border: none;
     }
   }
@@ -137,7 +148,7 @@
 
   @media (min-width: $tablet-width) {
     width: max-content;
-    padding: 0 0 0 36px;
+    padding: 0;
     font-weight: normal;
   }
 
@@ -159,7 +170,7 @@
     cursor: default;
 
     @media (min-width: $tablet-width) {
-      padding: 0 0 0 36px;
+      padding: 0;
     }
 
     &:hover,

@@ -51,6 +51,7 @@
     grid-column-gap: 60px;
     grid-row-gap: 32px;
     padding: 0 40px 0 37px;
+    align-items: start;
   }
 
   @media (min-width: $desktop-width) {

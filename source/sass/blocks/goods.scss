@@ -6,16 +6,16 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: calc(50% - 30px) calc(50% - 30px);
     grid-column-gap: 60px;
     grid-row-gap: 142px;
     padding: 0 30px 68px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-column-gap: 77px;
+    grid-template-columns: calc(25% - 60px) calc(25% - 60px) calc(25% - 60px) calc(25% - 60px);
+    grid-column-gap: 80px;
     grid-row-gap: 139px;
-    padding: 0 110px 72px;
+    padding: 0 110px 73px;
   }
 }
