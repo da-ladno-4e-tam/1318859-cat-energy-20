@@ -25,7 +25,6 @@
       background-image: url("../img/index-background-mobile@1x.jpg");
       background-repeat: no-repeat;
       background-size: cover;
-      background-position: center;
       z-index: -1;
 
       @media (min-width: $tablet-width) {
@@ -38,6 +37,7 @@
         width: calc(50vw - 17px);
         height: 696px;
         background-image: url("../img/index-background-desktop@1x.jpg");
+        background-size: auto;
       }
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
