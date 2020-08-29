@@ -31,8 +31,4 @@
 .indicators__value {
   max-width: 48%;
   word-break: break-word;
-
-  @media (min-width: $desktop-width) {
-    padding-right: 5px;
-  }
 }

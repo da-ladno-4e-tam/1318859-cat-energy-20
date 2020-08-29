@@ -11,16 +11,16 @@
 
   @media (min-width: $desktop-width) {
     padding: 0 0 68px;
-    background: linear-gradient($basic_white 0%, $basic_white 199px, $basic_grey 199px, $basic_grey 100%);
+    background: linear-gradient($basic_white 0%, $basic_white 195px, $basic_grey 195px, $basic_grey 100%);
 
     &::before {
       content: "";
       position: absolute;
       top: 0;
       right: 0;
-      width: calc(50vw - 720px + 383px);
+      width: calc(50vw - 720px + 388px);
       height: 100%;
-      background: linear-gradient($basic_white 0%, $basic_white 199px, $background_grey 199px, $background_grey 100%);
+      background: linear-gradient($basic_white 0%, $basic_white 195px, $background_grey 195px, $background_grey 100%);
     }
   }
 }
