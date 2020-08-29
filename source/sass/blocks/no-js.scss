@@ -1,3 +1,25 @@
 .no-js {
-  display: none;
+  .page-header--not-main {
+    border-bottom: none;
+  }
+
+  .nav__toggle {
+    display: none;
+  }
+
+  .nav__list {
+    display: flex;
+  }
+
+  .map__static-image {
+    display: block;
+  }
+
+  .hidden {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+  }
 }

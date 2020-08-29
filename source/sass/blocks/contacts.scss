@@ -1,4 +1,6 @@
 .contacts {
+  overflow-wrap: break-word;
+
   &--dark-background {
     background-color: $basic_grey;
   }

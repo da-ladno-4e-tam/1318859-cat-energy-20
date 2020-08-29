@@ -1,0 +1,5 @@
+.shown {
+  @media (min-width: $tablet-width) {
+    overflow: visible;
+  }
+}

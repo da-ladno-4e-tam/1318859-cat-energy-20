@@ -59,7 +59,6 @@
 }
 
 .contacts-fieldset__label {
-  position: relative;
   color: $special_dark-grey;
 
   &:not(:last-child) {
@@ -104,19 +103,19 @@
     fill: $basic_green;
   }
 
-  &:invalid:not(:placeholder-shown) + .contacts-fieldset__icon {
+  &:focus:invalid:not(:placeholder-shown) + .contacts-fieldset__icon {
     fill: $status_error;
   }
 
   @media (min-width: $tablet-width) {
     height: 52px;
-    padding: 0 19px;
+    padding: 0 49px 0 19px;
     font-size: 20px;
     line-height: 150%;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 18px;
+    padding: 0 50px 0 18px;
   }
 }
 
@@ -126,7 +125,7 @@
   fill: $special_dark-grey-2;
 
   &--email {
-    top: 17px;
+    top: 18px;
     right: 19px;
 
     @media (min-width: $desktop-width) {
@@ -136,8 +135,8 @@
   }
 
   &--phone {
-    top: 14px;
-    right: 15px;
+    top: 16px;
+    right: 18px;
 
     @media (min-width: $desktop-width) {
       top: 16px;

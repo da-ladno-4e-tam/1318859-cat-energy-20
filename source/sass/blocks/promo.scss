@@ -1,10 +1,14 @@
+.promo {
+  overflow-wrap: break-word;
+}
+
 .promo__wrapper {
-  padding: 26px 20px 22px;
+  padding: 27px 20px 22px;
   color: $basic_white;
 
   @media (min-width: $tablet-width) {
     position: relative;
-    padding: 61px 117px 526px;
+    padding: 56px 117px 526px;
   }
 
   @media (min-width: $desktop-width) {
@@ -57,7 +61,7 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 261px;
+    top: 256px;
     left: 29px;
     width: 709px;
     height: 609px;
@@ -75,10 +79,9 @@
 .promo__button {
   @media (min-width: $tablet-width) {
     width: 244px;
-    height: 54px;
+    min-height: 54px;
     margin-left: -5px;
     font-size: 20px;
-    line-height: 0;
   }
 
   @media (min-width: $desktop-width) {

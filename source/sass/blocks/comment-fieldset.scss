@@ -67,6 +67,15 @@
     color: $special_dark-grey;
   }
 
+  &:hover {
+    outline: $input-border-hover;
+  }
+
+  &:focus,
+  &:active {
+    outline: $input-border-active;
+  }
+
   @media (min-width: $tablet-width) {
     height: 174px;
     padding: 9px 18px;

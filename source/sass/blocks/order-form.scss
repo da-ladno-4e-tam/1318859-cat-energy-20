@@ -1,5 +1,6 @@
 .order-form {
   padding-bottom: 33px;
+  word-break: break-word;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 72px;
@@ -111,7 +112,6 @@
     margin-bottom: 0;
     min-height: 52px;
     font-size: 20px;
-    line-height: 0;
   }
 }
 

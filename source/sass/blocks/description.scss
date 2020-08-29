@@ -1,5 +1,6 @@
 .description {
   padding: 28px 20px 43px;
+  overflow-wrap: break-word;
 
   @media (min-width: $tablet-width) {
     padding: 45px 0;
@@ -124,6 +125,7 @@
     }
 
     &::after {
+      content: attr(data-text);
       position: absolute;
       top: -39px;
       left: 114px;
@@ -131,22 +133,6 @@
       line-height: 100%;
       color: $basic_grey;
       z-index: -1;
-    }
-
-    &--useful::after {
-      content: "1";
-    }
-
-    &--simply::after {
-      content: "2";
-    }
-
-    &--nutritious::after {
-      content: "3";
-    }
-
-    &--fast::after {
-      content: "4";
     }
   }
 
@@ -164,6 +150,7 @@
   font-size: 14px;
   color: $special_dark-grey;
   line-height: 129%;
+  word-break: break-word;
 
   @media (min-width: $tablet-width) {
     width: 91%;

@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="no-js" lang="ru">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи. Каталог</title>
   <link href="css/style.min.css" rel="stylesheet">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
 </head>
 <body>
 
@@ -25,7 +27,7 @@
   </symbol>
 </svg>
 
-<header class="page-header">
+<header class="page-header page-header--not-main">
   <div class="page-header__container container">
     <a href="index.html" class="page-header__logo logo">
       <picture>
@@ -35,7 +37,7 @@
       </picture>
     </a>
     <nav class="page-header__nav nav">
-      <button class="nav__toggle toggle no-js toggle--open" type="button">
+      <button class="nav__toggle toggle toggle--open" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <ul class="nav__list">
@@ -245,7 +247,7 @@
       </li>
       <li class="goods__item product">
         <div class="product__description">
-          <h3 class="product__title"><a class="product__title-link" href="pro-small.html">Cat energy slim 500&nbsp;г</a>
+          <h3 class="product__title"><a class="product__title-link" href="slim-small.html">Cat energy slim 500&nbsp;г</a>
           </h3>
           <dl class="product__indicators indicators">
             <div class="indicators__item">
@@ -274,7 +276,7 @@
             </div>
           </dl>
         </div>
-        <a class="product__image-link product__image-link--small" href="pro-small.html" tabindex="-1">
+        <a class="product__image-link product__image-link--small" href="slim-small.html" tabindex="-1">
           <picture class="product__image product__image--small">
             <source type="image/webp" media="(min-width: 1440px)" srcset="img/buckwheat-small-desktop@1x.webp 1x, img/buckwheat-small-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.webp 1x, img/buckwheat-small-tablet@2x.webp 2x">
@@ -290,7 +292,7 @@
       </li>
       <li class="goods__item product">
         <div class="product__description">
-          <h3 class="product__title"><a class="product__title-link" href="pro-big.html">Cat energy slim 1000&nbsp;г</a>
+          <h3 class="product__title"><a class="product__title-link" href="slim-big.html">Cat energy slim 1000&nbsp;г</a>
           </h3>
           <dl class="product__indicators indicators">
             <div class="indicators__item">
@@ -319,7 +321,7 @@
             </div>
           </dl>
         </div>
-        <a class="product__image-link product__image-link--big" href="pro-big.html" tabindex="-1">
+        <a class="product__image-link product__image-link--big" href="slim-big.html" tabindex="-1">
           <picture class="product__image product__image--big">
             <source type="image/webp" media="(min-width: 1440px)" srcset="img/buckwheat-big-desktop@1x.webp 1x, img/buckwheat-big-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.webp 1x, img/buckwheat-big-tablet@2x.webp 2x">
@@ -335,7 +337,7 @@
       </li>
       <li class="goods__item product">
         <div class="product__description">
-          <h3 class="product__title"><a class="product__title-link" href="pro-small.html">Cat energy slim 500&nbsp;г</a>
+          <h3 class="product__title"><a class="product__title-link" href="slim-small.html">Cat energy slim 500&nbsp;г</a>
           </h3>
           <dl class="product__indicators indicators">
             <div class="indicators__item">
@@ -364,7 +366,7 @@
             </div>
           </dl>
         </div>
-        <a class="product__image-link product__image-link--small" href="pro-small.html" tabindex="-1">
+        <a class="product__image-link product__image-link--small" href="slim-small.html" tabindex="-1">
           <picture class="product__image product__image--small">
             <source type="image/webp" media="(min-width: 1440px)" srcset="img/rice-small-desktop@1x.webp 1x, img/rice-small-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.webp 1x, img/rice-small-tablet@2x.webp 2x">
@@ -451,21 +453,21 @@
     </a>
     <ul class="page-footer__social social">
       <li class="social__item">
-        <a class="social__link" href="#">
+        <a class="social__link" href="#" aria-label="vkontakte">
           <svg class="social__icon social__icon--vk" width="22" height="12">
             <use xlink:href="#icon-vk"></use>
           </svg>
         </a>
       </li>
       <li class="social__item">
-        <a class="social__link" href="#">
+        <a class="social__link" href="#" aria-label="instagram">
           <svg class="social__icon social__icon--instagram" width="16" height="16">
             <use xlink:href="#icon-insta"></use>
           </svg>
         </a>
       </li>
       <li class="social__item">
-        <a class="social__link" href="#">
+        <a class="social__link" href="#" aria-label="facebook">
           <svg class="social__icon social__icon--fb" xmlns="http://www.w3.org/2000/svg" width="10" height="19" viewBox="0 0 10 19">
             <use xlink:href="#icon-fb"></use>
           </svg>
@@ -485,8 +487,9 @@
 
 <script src="js/burger.js"></script>
 <script src="js/order.js"></script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmArTcCACW5ROdBrj9EzqHTw3vh0ks8cQ&callback=initMap"></script>
-<script src="js/map.js"></script>
+<script src="js/no-js.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=0b2063ec-9519-40aa-a76d-894ec25f0a51&lang=ru_RU"></script>
+<script src="js/initmap.js"></script>
 
 </body>
 </html>

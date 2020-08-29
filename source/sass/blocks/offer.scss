@@ -2,6 +2,7 @@
   position: relative;
   margin: 0;
   background-color: $basic_grey;
+  overflow-wrap: break-word;
 
   &::before {
     content: "";
@@ -97,13 +98,15 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    max-width: 50%;
     padding-left: 0;
-    margin-bottom: 24px;
+    margin-bottom: 25px;
     font-size: 36px;
     line-height: 100%;
   }
 
   @media (min-width: $desktop-width) {
+    max-width: none;
     padding-left: 162px;
     margin-bottom: 73px;
   }
@@ -116,10 +119,11 @@
   font-size: 14px;
   color: $special_dark-grey;
   line-height: 129%;
+  /*overflow-wrap: break-word;*/
   border-bottom: 1px solid $border-color-primary;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 53px;
+    margin-bottom: 52px;
     padding-bottom: 0;
     font-size: 16px;
     line-height: 150%;

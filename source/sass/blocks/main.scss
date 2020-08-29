@@ -1,8 +1,8 @@
 .page-main__title {
-  padding: 26px 20px 40px;
+  padding: 27px 20px 40px;
 
   @media (min-width: $tablet-width) {
-    padding: 61px 30px 165px;
+    padding: 57px 30px 163px;
   }
 
   @media (min-width: $desktop-width) {
@@ -10,10 +10,10 @@
   }
 
   &--form {
-    padding-bottom: 38px;
+    padding-bottom: 36px;
 
     @media (min-width: $tablet-width) {
-      padding-bottom: 55px;
+      padding-bottom: 54px;
     }
 
     @media (min-width: $desktop-width) {
@@ -29,6 +29,7 @@
   font-size: 14px;
   line-height: 129%;
   text-transform: uppercase;
+  overflow-wrap: break-word;
 
   @media (min-width: $tablet-width) {
     max-width: 470px;
