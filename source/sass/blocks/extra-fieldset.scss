@@ -20,6 +20,10 @@
     line-height: 100%;
   }
 
+  @media (min-width: $desktop-width) {
+    margin-bottom: 56px;
+  }
+
   &::after {
     content: "";
     position: absolute;

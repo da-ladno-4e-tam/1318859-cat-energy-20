@@ -8,11 +8,13 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
-    padding: 56px 117px 526px;
+    min-height: 865px;
+    padding: 56px 117px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 107px 190px 269px;
+    min-height: 660px;
+    padding: 107px 190px;
   }
 }
 
@@ -55,9 +57,9 @@
 
 .promo__image {
   display: block;
-  margin: 0 auto 2px;
   width: 100%;
   height: auto;
+  margin: 0 auto 2px;
 
   @media (min-width: $tablet-width) {
     position: absolute;

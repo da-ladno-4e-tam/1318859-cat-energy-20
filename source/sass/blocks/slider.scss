@@ -100,6 +100,7 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 39px;
     margin-left: -59px;
+    z-index: 1;
   }
 
   &--before {
@@ -113,6 +114,7 @@
 
     @media (min-width: $desktop-width) {
       img {
+        margin-top: 4px;
         margin-left: -19px;
       }
     }
@@ -129,6 +131,7 @@
 
     @media (min-width: $desktop-width) {
       img {
+        margin-top: 3px;
         margin-left: -365px;
       }
     }
@@ -181,7 +184,7 @@
 
     @media (min-width: $tablet-width) {
       top: calc(50% - 17px);
-      left: calc(50% - 17px);
+      left: calc(50% - 14px);
       width: 34px;
       height: 34px;
       border: 1px solid $special_grey;
